@@ -23,3 +23,37 @@ Untracked files:
         notes
 
 nothing added to commit but untracked files present (use "git add" to track)
+
+[bidule@fedora35 basics]$ git add doc1.txt 
+[bidule@fedora35 basics]$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   doc1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        notes
+
+
+
+[bidule@fedora35 basics]$ git add .
+[bidule@fedora35 basics]$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   doc1.txt
+        new file:   notes
+
+
+[bidule@fedora35 basics]$ git commit -m "My First Commit"
+[master (root-commit) ba6ba64] My First Commit
+ 2 files changed, 25 insertions(+)
+ create mode 100644 doc1.txt
+ create mode 100644 notes
